@@ -31,6 +31,9 @@ fig2 = gerar_grafico_2(df_copy)
 st.pyplot(fig2)
 
 st.markdown('Nesse gráfico é perceptivel a relação inversamente proporcional onde com maior velocidade o tempo de ocupação diminui já que quanto mais rápido o trem terminar o circuito menos tempo ele vai estar ocupando o mesmo.' \
+            
 'Principais pontos:' \
+
 'Durante baixas velocidades o tempo de ocupação dispara, isso evidencia o impacto que as zonas de parada tem, manobra ou aproximação de estações para as trocas.' \
+
 'Em velocidades mais altas o tempo de ocupação estabiliza nos níveis mínimos, isso garante qeu o trecho fique livre mais rapidamente para o trem seguinte prosseguir de forma segura.')
