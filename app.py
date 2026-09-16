@@ -25,7 +25,7 @@ df_copy = df.copy()
 #primeiro gráfico exibição
 st.subheader("1. Comparação de Headway por Sinalização")
 
-col1, col2 = st.columns([2, 1])
+col1, col2 = st.columns([1.2, 1])
 
 with col1:
     fig1 = gerar_grafico_1(df_copy)
@@ -41,7 +41,7 @@ st.divider()
 #segundo gráfico exibição
 st.subheader("2. Relação entre Velocidade e Ocupação")
 
-col3, col4 = st.columns([2, 1])
+col3, col4 = st.columns([1.2, 1])
 
 with col3:
     fig2 = gerar_grafico_2(df_copy)
