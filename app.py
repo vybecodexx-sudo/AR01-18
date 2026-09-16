@@ -7,7 +7,14 @@ import streamlit as st
 from grafico1 import gerar_grafico_1
 from grafico2 import gerar_grafico_2
 
+
+st.set_page_config(page_title="Sinalização Ferroviária - Reposição", layout="wide")
+
+
 st.title("Análise de Sinalização Ferroviária")
+
+
+st.divider()
 
 
 #leitura
@@ -27,6 +34,10 @@ with col1:
 with col2:
     st.markdown("Neste primeiro gráfico, observa-se claramente a diferença de desempenho entre os dois sistemas no tempo de intervalo (headway) entre as composições. A visualização do CBTC destaca uma variação de valores muito mais concentrada, demonstrando que a operação sob esse sistema se torna significativamente mais pontual, previsível e protegida contra atrasos em cadeia. Sob a ótica operacional, a transição para a tecnologia CBTC possibilita rodar mais trens por hora na mesma linha existente, elevando a capacidade de transporte sem a necessidade de investimentos em expansão de infraestrutura física.")
 
+
+st.divider()
+
+
 #segundo gráfico exibição
 st.subheader("2. Relação entre Velocidade e Ocupação")
 
@@ -37,4 +48,4 @@ with col3:
     st.pyplot(fig2)
 
 with col4:
-    plt.markdown('O segundo gráfico evidencia uma clara relação inversamente proporcional: conforme a velocidade permitida aumenta, o tempo de ocupação do trecho diminui. Isso ocorre porque, quanto mais rápido o trem percorre o circuito, menos tempo ele permanece sobre ele. Em faixas de baixa velocidade, o tempo de ocupação dispara, ressaltando o grande impacto que zonas de parada, áreas de manobra ou trechos de aproximação de estações exercem sobre a circulação. Em contrapartida, quando a velocidade se eleva, o tempo de ocupação estabiliza em patamares mínimos, garantindo que a via seja liberada rapidamente para que o próximo trem prossiga com total segurança.')
+    st.markdown('O segundo gráfico evidencia uma clara relação inversamente proporcional: conforme a velocidade permitida aumenta, o tempo de ocupação do trecho diminui. Isso ocorre porque, quanto mais rápido o trem percorre o circuito, menos tempo ele permanece sobre ele. Em faixas de baixa velocidade, o tempo de ocupação dispara, ressaltando o grande impacto que zonas de parada, áreas de manobra ou trechos de aproximação de estações exercem sobre a circulação. Em contrapartida, quando a velocidade se eleva, o tempo de ocupação estabiliza em patamares mínimos, garantindo que a via seja liberada rapidamente para que o próximo trem prossiga com total segurança.')
